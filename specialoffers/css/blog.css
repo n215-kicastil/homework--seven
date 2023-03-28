@@ -1,0 +1,87 @@
+.blogContainer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 115px;
+}
+.blogContainer h1 {
+  width: 56px;
+  font-size: 30px;
+  font-family: "Proxima Nova thin", sans-serif;
+  font-stretch: extra-condensed;
+  border-bottom: solid 2px black;
+  margin-bottom: 30px;
+}
+.blogContainer .blogPosts {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogContainer .blogPosts .blogDate {
+  width: 60px;
+  height: 60px;
+  background-color: #79addc;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-right: 20px;
+}
+.blogContainer .blogPosts .blogDate .day {
+  font-size: 22px;
+  font-family: GillSans;
+  font-weight: bold;
+  margin: 0;
+}
+.blogContainer .blogPosts .blogDate .month {
+  font-size: 12px;
+  font-family: "Gill Sans", sans-serif;
+  margin: 0;
+}
+.blogContainer .blogPosts .post {
+  width: 100%;
+}
+.blogContainer .blogPosts .post .postImage {
+  width: 100%;
+  height: 259px;
+  margin-bottom: 20px;
+}
+.blogContainer .blogPosts .post .postImage img {
+  width: 100%;
+  height: 259px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogContainer .blogPosts .post .postWords {
+  max-width: 380px;
+}
+.blogContainer .blogPosts .post .postWords h6 {
+  font-size: 15px;
+  font-family: "Gill Sans", sans-serif;
+  font-style: normal;
+}
+.blogContainer .blogPosts .post .postWords p {
+  font-size: 13px;
+  font-family: "Gill Sans", sans-serif;
+  font-style: normal;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 1060px) {
+  .blogContainer {
+    margin: 0 50px;
+  }
+  .blogContainer .blogPosts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContainer .blogPosts .blogDate {
+    margin-bottom: 20px;
+  }
+}

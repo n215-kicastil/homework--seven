@@ -1,0 +1,48 @@
+nav {
+  position: fixed;
+  height: 90px;
+  max-width: 980px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 1px black;
+}
+nav .logo {
+  width: 92px;
+  height: 43px;
+}
+nav .links {
+  width: 300px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 15px;
+  font-family: GillSans;
+  color: black;
+}
+nav .links a {
+  font-family: GillSans;
+  font-size: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: GillSans;
+  color: black;
+}

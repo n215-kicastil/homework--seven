@@ -1,0 +1,111 @@
+.specialContainer {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+.specialContainer h1 {
+  width: 300px;
+  font-size: 30px;
+  font-family: "Proxima Nova thin", sans-serif;
+  font-stretch: extra-condensed;
+  border-bottom: solid 2px black;
+  margin-bottom: 35px;
+}
+.specialContainer .offer {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.specialContainer .offer .offerImage {
+  width: 199px;
+  height: 287px;
+  margin-bottom: 60px;
+}
+.specialContainer .offer .offerImage img {
+  width: 199px;
+  height: 287px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.specialContainer .offer .offerDetails {
+  width: 100%;
+  margin-left: 20px;
+}
+.specialContainer .offer .offerDetails .detailsHeader {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.specialContainer .offer .offerDetails .detailsHeader h1 {
+  width: 270px;
+  font-size: 30px;
+  font-family: "Proxima Nova thin", sans-serif;
+  font-stretch: extra-condensed;
+  border-bottom: solid 2px black;
+}
+.specialContainer .offer .offerDetails .detailsHeader .percentOff {
+  width: 203px;
+  font-size: 20px;
+  font-family: "Proxima Nova thin", sans-serif;
+  font-stretch: extra-condensed;
+  color: #ff7d38;
+}
+.specialContainer .offer .offerDetails p {
+  font-size: 16px;
+  font-family: "Gill Sans", sans-serif;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+.specialContainer .offer .offerDetails .learnMore {
+  width: 133px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "Gill Sans", sans-serif;
+  font-style: normal;
+  background-color: #79addc;
+  border-radius: 20px;
+  padding: 10px 6px;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 1060px) {
+  .specialContainer {
+    margin: 0 50px;
+  }
+  .specialContainer .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .specialContainer .offer .offerImage {
+    margin-bottom: 20px;
+  }
+  .specialContainer .offer .offerDetails {
+    margin: 0 auto;
+  }
+  .specialContainer .offer .offerDetails .detailsHeader {
+    max-width: 250px;
+  }
+  .specialContainer .offer .offerDetails p {
+    max-width: 300px;
+  }
+  .specialContainer .offer .offerDetails .learnMore {
+    margin-bottom: 50px;
+  }
+}

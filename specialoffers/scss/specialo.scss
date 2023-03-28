@@ -1,0 +1,112 @@
+.specialContainer {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 105px;
+
+  h1 {
+    width: 300px;
+    font-size: 30px;
+    font-family: 'Proxima Nova thin', sans-serif;
+    font-stretch: extra-condensed;
+    border-bottom: solid 2px black;
+    margin-bottom: 35px;
+  }
+
+  .offer {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+   
+    .offerImage {
+      width: 199px;
+      height: 287px;
+      margin-bottom: 60px;
+      img {
+        width: 199px;
+        height: 287px;
+        object-fit: cover;
+      }
+    }
+
+    .offerDetails {
+      width: 100%;
+      margin-left: 20px;
+
+      .detailsHeader {
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+         width: 270px;
+          font-size: 30px;
+          font-family: 'Proxima Nova thin', sans-serif;
+          font-stretch: extra-condensed;
+          border-bottom: solid 2px black;
+        }
+
+        .percentOff {
+          width: 203px;
+          font-size: 20px;
+          font-family: 'Proxima Nova thin', sans-serif;
+          font-stretch: extra-condensed;
+          color: #ff7d38;
+          //position: absolute;
+          //justify-content: right;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-family: 'Gill Sans', sans-serif;
+        font-style: normal;  
+        margin-bottom: 50px;
+      }
+
+      .learnMore {
+        width: 133px;
+        height: 40px;
+        font-size: 15px;
+        font-family: 'Gill Sans', sans-serif;
+        font-style: normal;  
+        background-color: #79addc;
+        border-radius: 20px;
+        padding: 10px 6px;
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .specialContainer {
+    margin: 0 50px;
+
+    .offer {
+      flex-direction: column;
+      justify-content: center;
+
+      .offerImage {
+        margin-bottom: 20px;
+      }
+
+      .offerDetails {
+        margin: 0 auto;
+
+        .detailsHeader {
+          max-width: 250px;
+        }
+
+        p {
+          max-width: 300px;
+        }
+
+        .learnMore {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
